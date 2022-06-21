@@ -1,0 +1,245 @@
+/*   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+        Astro-telescope webpages
+        Designed by Amit Barman
+        Date - 20/12/2021
+        github - https://github.com/AmitBarman99/
+
+     $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ navbar section $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+@media screen and (max-width: 860px){
+    .first-words p{
+        padding: 22px 80px;
+    }
+    .second-words h1{
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #navbar-animmenu {
+        background: #5161ce;
+        float: left;
+        /* overflow: hidden; */
+        position: relative;
+        padding: 10px 0px;
+      width: 100%;
+    
+    }
+    .content-nav .active{
+        background: white;
+        transition: all 2s;
+        /* transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); */
+        transition-timing-function: cubic-bezier(0.8, 0.55, 0.65, 0.55);
+    }
+    .content-nav li::before{
+        content: " ";
+        position: absolute;
+    }
+    .label{
+        display: grid;
+        cursor: pointer;
+        grid-column: 3;
+        padding-right: 10px;
+    }
+    .content-nav{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column: 1/4;
+        text-align: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: all ease-in-out 0.6s;
+    }
+    .main-navbar input:checked ~ .content-nav{
+        max-height: 500px;
+
+    }
+    .content-nav li{
+        padding: 15px 0px;
+        text-align: right;
+    }
+    .content-nav li a{
+        text-align: right;
+    }
+    .hori-selector{
+        display: none;
+    }
+    .tab-nav{
+        display: none;
+    }
+    .burger{
+        font-size: 40px;
+        padding-left: 30px;
+    }
+
+    /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ home section  $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+    .first-words h2{
+        padding-top: 163px;
+    }
+    .first-words p{
+        font-size: 20px;
+        padding: 22px 60px;
+    }
+    .second-words h1{
+        /* border-bottom: 3px solid white;
+        border-top: 3px solid white;
+        border-right: none; */
+        font-size: 27px;
+    }
+
+    /* $$$$$$$$$$$$$$$$$$$$$$$$$client section $$$$$$$$$$$$$$$$$$$$$$$$$$ */
+    .remark{
+        width: 72%;
+        padding: 23px;
+    }
+    .social_media_side ul li{
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .first-words p{
+        font-size: 20px;
+    }
+    .second-words h1{
+        font-size: 20px;
+    }
+}
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ about section  $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 80%;
+        float: none;
+    }
+
+}
+
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+    .text{
+        margin: 10px;
+        padding-right: 35px;
+        text-align: justify;
+        /* text-align: center; */
+    }
+    .skills{
+        margin-left: -50px;
+    }
+    .about-btn{
+        padding: 16px 20px;
+        margin: 10px;
+        position: relative;
+        display: flex;
+    }
+}
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Timeline section $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+@media  screen and (max-width:1100px) {
+    .each-event{
+      width: 350px;
+    }
+    .each-event:nth-child(even) {
+      margin-left: calc(50% - 372px);
+    }
+  }
+  @media  screen and (max-width:800px) {
+    .each-event{
+      width: 250px;
+    }
+    .each-event:nth-child(even) {
+      margin-left: calc(50% - 272px);
+    }
+  }
+  @media  screen and (max-width:600px) {
+    .each-event{
+      width: 300px;
+    }
+    .each-event:nth-child(even) {
+      margin-left: calc(50% - 172px);
+    }
+    .each-event:nth-child(odd) {
+      margin-left: calc(50% - 160px);
+    }
+    
+  }
+
+  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Clients section $$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+  @media screen and (max-width:920px) {
+    .veiw-box{
+      width: 100%;
+    }
+    .user{
+      width: 500px;
+      align-items: center;
+      justify-content: center;
+    }
+    .user img{
+      top: -65px;
+    }
+    .user p{
+      font-size: 16px;
+      padding: 10px 0 10px;
+      line-height: 20px;
+    }
+  }
+
+  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Contact section $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+  @media screen and (max-width:725px){
+    #contactt{
+      width: 100%;
+    }
+    .contactus{
+      width: 500px;
+    }
+    .contactus form{
+      padding: 30px 40px;
+    }
+    #bttnn{
+      width: 180px;
+      padding: 12px;
+    }
+    
+  }
+  @media screen and (max-width:532px){
+    #contactt{
+      width: 100%;
+    }
+    .contactus{
+      width: 400px;
+    }
+    .contactus form{
+      padding: 1px 0px;
+    }
+    #bttnn{
+      width: 150px;
+      padding: 12px;
+      font-size: 16px;
+    }
+    
+  }
